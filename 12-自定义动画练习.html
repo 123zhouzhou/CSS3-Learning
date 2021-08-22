@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>软件测试第十天</title>
+		<style type="text/css">
+			body{background: url(img/004.jpg); font-size: 40px;}
+			img{
+				width: 256px; height: 256px;
+				border: #FFFF00 3px solid;
+				border-radius: 50%;
+				box-shadow: #00FF7F 3px 3px 30px;
+				margin: 50px;
+			}
+			/* animation 时间含义和transition相同 */
+			.img1:hover{animation: shake .25s infinite alternate;}
+			.img2:hover{transform: scale(1.75) rotateX(-180deg); transition: all 1s;}
+			
+			/* 可以使用百分比替代默认的from和to */
+			@keyframes shake{
+				0%{transform: rotate(-5deg);}
+				50%{transform: rotateX(-20deg);}
+				100%{transform: rotateX(20deg) translate(100px, 0);}
+			}
+		</style>
+	</head>
+	<body>
+		无事小神仙晃起来
+		<img src="img/005.jpg" class="img1" >
+		<img src="img/005.jpg" class="img2" >
+	</body>
+</html>

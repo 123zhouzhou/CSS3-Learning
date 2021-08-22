@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>软件测试第八天</title>
+		<style type="text/css">
+		    body{background: url(img/002.webp.jpg);}
+			div{
+				width: 200px; height: 200px;
+				font-size: 20px;
+				text-shadow: #00BFFF;
+				background: rgba(156, 178, 19, 0.3);				
+				border: #00FF7F 3px solid;
+				
+				/* 盒子是正方形时，设置50%即可为一个圆圈 */
+				border-radius: 50%;
+				margin: 200px; padding: 30px 35px;
+			}
+			/* transition | 数值1代表动画的运行时间，数值2代表延迟时间
+			 * ease-in 变加速
+			 * ease-out 变减速
+			 * ease-in-out 先变加速再变减速 */
+			input:hover{transform: rotate(360deg) scale(2.5); transition: all 1s 2s ease-out;}
+		</style>
+	</head>
+	<body>
+		<div>
+			<form action="" method="post">
+				<input type="submit" value="就是玩儿" style="margin:60px;"/>
+			</form>
+		</div>
+	</body>
+</html>

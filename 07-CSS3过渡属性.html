@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>软件测试第八天</title>
+		<style type="text/css">
+			.v1{transform: rotate(30deg);}
+			.v2{transform: rotate(-30deg) scale(0.6);}
+			div{
+				width: 256px; height: 256px;
+				font-size: 36px;
+				text-shadow: #00ffff 1px 1px 8px;
+				background: linear-gradient(45deg, lightpink 20%, lightgreen 80%);
+				padding: 40px; margin: 60px;
+				border: #00BFFF 2px dashed;
+				border-radius: 0 60px;
+				box-shadow: #FFFF00 0 0 30px inset;
+				transition: all 0.5s;
+				/* transition: 想要过度的属性 | 一般写all，代表所有属性，只要变化了，都以过渡动画的形式展示；时间为动画的执行时间 */
+			}
+			
+			
+			/* hovor--CSS伪类，鼠标悬停时的样式 */
+			.v1:hover{background: url(img/017.jpg); transform: scale(1.25);}
+		</style>
+	</head>
+	<body>
+		<div class="v1">BJUT</div>
+		<div class="v2">bjut</div>
+	</body>
+</html>
